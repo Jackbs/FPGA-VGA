@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Aug 15 17:34:30 2016
+# Process ID: 8756
+# Current directory: C:/Users/bannisjack/VGA/VGA.runs/synth_1
+# Command line: vivado.exe -log top_module.vds -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
+# Log file: C:/Users/bannisjack/VGA/VGA.runs/synth_1/top_module.vds
+# Journal file: C:/Users/bannisjack/VGA/VGA.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_module.tcl -notrace
+Command: synth_design -top top_module -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 294.848 ; gain = 123.082
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_module' [C:/Users/bannisjack/VGA/VGA.srcs/sources_1/new/top_module.vhd:48]
+INFO: [Synth 8-3491] module 'Intersection' declared at 'C:/Users/bannisjack/VGA/VGA.srcs/sources_1/imports/new/Intersection.vhd:33' bound to instance 'intersection1' of component 'Intersection' [C:/Users/bannisjack/VGA/VGA.srcs/sources_1/new/top_module.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'Intersection' [C:/Users/bannisjack/VGA/VGA.srcs/sources_1/imports/new/Intersection.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Intersection' (1#1) [C:/Users/bannisjack/VGA/VGA.srcs/sources_1/imports/new/Intersection.vhd:43]
+INFO: [Synth 8-3491] module 'Moving_Block' declared at 'C:/Users/bannisjack/VGA/VGA.srcs/sources_1/imports/new/Moving_Block.vhd:33' bound to instance 'NSCAR' of component 'Moving_Block' [C:/Users/bannisjack/VGA/VGA.srcs/sources_1/new/top_module.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'Moving_Block' [C:/Users/bannisjack/VGA/VGA.srcs/sources_1/imports/new/Moving_Block.vhd:47]
+WARNING: [Synth 8-614] signal 'posx' is read in the process but is not in the sensitivity list [C:/Users/bannisjack/VGA/VGA.srcs/sources_1/imports/new/Moving_Block.vhd:58]
+WARNING: [Synth 8-614] signal 'position' is read in the process but is not in the sensitivity list [C:/Users/bannisjack/VGA/VGA.srcs/sources_1/imports/new/Moving_Block.vhd:58]
+WARNING: [Synth 8-614] signal 'posy' is read in the process but is not in the sensitivity list [C:/Users/bannisjack/VGA/VGA.srcs/sources_1/imports/new/Moving_Block.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'Moving_Block' (2#1) [C:/Users/bannisjack/VGA/VGA.srcs/sources_1/imports/new/Moving_Block.vhd:47]
+INFO: [Synth 8-3491] module 'Moving_Block' declared at 'C:/Users/bannisjack/VGA/VGA.srcs/sources_1/imports/new/Moving_Block.vhd:33' bound to instance 'EWCAR' of component 'Moving_Block' [C:/Users/bannisjack/VGA/VGA.srcs/sources_1/new/top_module.vhd:150]
+INFO: [Synth 8-256] done synthesizing module 'top_module' (3#1) [C:/Users/bannisjack/VGA/VGA.srcs/sources_1/new/top_module.vhd:48]
+WARNING: [Synth 8-3331] design top_module has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 332.043 ; gain = 160.277
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 332.043 ; gain = 160.277
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/bannisjack/VGA/VGA.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/bannisjack/VGA/VGA.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/bannisjack/VGA/VGA.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 626.625 ; gain = 0.000

@@ -1,0 +1,79 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Mon Sep 19 18:20:51 2016
+| Host         : kosmos running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_module_control_sets_placed.rpt
+| Design       : top_module
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    26 |
+| Minimum Number of register sites lost to control set restrictions |   155 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               7 |            6 |
+| No           | No                    | Yes                    |               4 |            4 |
+| No           | Yes                   | No                     |              32 |           20 |
+| Yes          | No                    | No                     |              64 |           18 |
+| Yes          | No                    | Yes                    |              34 |           11 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+-------------------------------------------------+-------------------------------+------------------+----------------+
+|          Clock Signal          |                  Enable Signal                  |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
++--------------------------------+-------------------------------------------------+-------------------------------+------------------+----------------+
+|  clk                           |                                                 |                               |                1 |              1 |
+|  clear_BUFG                    |                                                 | EWCAR/posy_reg[3]_LDC_i_1_n_0 |                1 |              1 |
+|  clear_BUFG                    |                                                 | EWCAR/posx_reg[1]_P           |                1 |              1 |
+|  clear_BUFG                    |                                                 | EWCAR/posx_reg[1]_C_0         |                1 |              1 |
+|  clear_BUFG                    |                                                 | EWCAR/dx_reg_i_2_n_1          |                1 |              1 |
+|  PixelClk                      |                                                 |                               |                1 |              1 |
+|  NSCAR/posx_reg[1]_C_0[0]      |                                                 | NSCAR/posx_reg[1]_C_1[0]      |                1 |              1 |
+|  NSCAR/posx_reg[5]_LDC_i_1_n_0 |                                                 | NSCAR/posx_reg[5]_LDC_i_2_n_0 |                1 |              1 |
+|  NSCAR/posx_reg[4]_LDC_i_1_n_0 |                                                 | NSCAR/posx_reg[4]_LDC_i_2_n_0 |                1 |              1 |
+|  EWCAR/posy_reg[8]_LDC_i_1_n_0 |                                                 | EWCAR/posy_reg[8]_LDC_i_2_n_0 |                1 |              1 |
+|  EWCAR/posy_reg[7]_LDC_i_1_n_0 |                                                 | EWCAR/posy_reg[7]_LDC_i_2_n_0 |                1 |              1 |
+|  EWCAR/posy_reg[6]_LDC_i_1_n_0 |                                                 | EWCAR/posy_reg[6]_LDC_i_2_n_0 |                1 |              1 |
+|  EWCAR/posy_reg[5]_LDC_i_1_n_0 |                                                 | EWCAR/posy_reg[5]_LDC_i_2_n_0 |                1 |              1 |
+|  EWCAR/posy_reg[4]_LDC_i_1_n_0 |                                                 | EWCAR/posy_reg[4]_LDC_i_2_n_0 |                1 |              1 |
+|  EWCAR/posy_reg[3]_LDC_i_1_n_0 |                                                 | EWCAR/dx_reg_i_2_n_1          |                1 |              1 |
+|  EWCAR/posx_reg[1]_P           |                                                 | EWCAR/posx_reg[1]_C_0         |                1 |              1 |
+|  EWCAR/green[0]_0              |                                                 | EWCAR/green[0]_1              |                1 |              1 |
+|  EWCAR/dx_reg_i_1_n_1          |                                                 | EWCAR/dx_reg_i_2_n_1          |                1 |              1 |
+|  mclk_IBUF_BUFG                |                                                 |                               |                1 |              2 |
+|  mclk_IBUF_BUFG                | lightcontroller/FSM_sequential_state[2]_i_1_n_0 | reset_IBUF                    |                1 |              3 |
+|  clear_BUFG                    |                                                 |                               |                3 |              3 |
+|  clk                           |                                                 | clear_BUFG                    |                4 |             10 |
+|  PixelClk                      |                                                 | clk                           |                4 |             10 |
+|  mclk_IBUF_BUFG                | lightcontroller/timer                           | reset_IBUF                    |               10 |             31 |
+|  clear_BUFG                    | NSCAR/posy[31]_i_1_n_0                          |                               |                9 |             32 |
+|  clear_BUFG                    | EWCAR/posx[31]_i_1_n_0                          |                               |                9 |             32 |
++--------------------------------+-------------------------------------------------+-------------------------------+------------------+----------------+
+
+

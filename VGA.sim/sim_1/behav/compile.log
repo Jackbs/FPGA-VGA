@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bannisjack/VGA/VGA.srcs/sources_1/imports/new/Moving_Block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Moving_Block
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bannisjack/VGA/VGA.srcs/sources_1/imports/new/Intersection.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Intersection
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bannisjack/VGA/VGA.srcs/sources_1/new/top_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bannisjack/VGA/VGA.srcs/sim_1/new/VGA_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity VGA_TB
